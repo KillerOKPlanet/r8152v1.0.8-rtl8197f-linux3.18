@@ -27,7 +27,7 @@
 #include <linux/usb/cdc.h>
 
 /* Version Information */
-#define DRIVER_VERSION "v1.08.0 (2015/01/13)"
+#define DRIVER_VERSION "v1.08.2 (2015/01/13)"
 #define DRIVER_AUTHOR "Realtek linux nic maintainers <nic_swsd@realtek.com> edit by atolstov"
 #define DRIVER_DESC "Realtek RTL8152/RTL8153 Based USB Ethernet Adapters"
 #define MODULENAME "r8152"
@@ -507,9 +507,6 @@ enum rtl8152_flags {
 
 #define MCU_TYPE_PLA			0x0100
 #define MCU_TYPE_USB			0x0000
-
-//define REALTEK_USB_DEVICE(vend, prod)	\
-//	USB_DEVICE_INTERFACE_CLASS(vend, prod, USB_CLASS_VENDOR_SPEC)
 
 struct tally_counter {
 	__le64	tx_packets;
